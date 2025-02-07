@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ConvexClientProvider from "@/provider/ConvexClientProvider";
-import { SignedIn, SignedOut, SignIn } from "@clerk/nextjs";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,19 +25,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ConvexClientProvider>
-      <html lang="en">
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center items-center mt-24`}
-        >
-          <SignedOut>
-            <SignIn routing="hash"/>
-          </SignedOut>
-          <SignedIn>
-          {children}
-          </SignedIn> 
-        </body>
-      </html>
-    </ConvexClientProvider>
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ConvexClientProvider>
+        <TooltipProvider>
+        {children}
+        </TooltipProvider>
+        </ConvexClientProvider>
+      </body>
+    </html>
   );
 }
