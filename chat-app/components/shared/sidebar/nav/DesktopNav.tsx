@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Tooltip, TooltipTrigger } from "@/components/ui/tooltip";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { useNavigation } from "@/hoooks/useNavigation";
 import { UserButton } from "@clerk/clerk-react";
 import Link from "next/link";
@@ -25,6 +25,9 @@ const DesktopNav = () => {
                                                 {path.icon}
                                             </Button>
                                         </TooltipTrigger>
+                                        <TooltipContent>
+                                            <p>{path.name}</p>
+                                        </TooltipContent>
                                     </Tooltip>
                                     </Link>
                                 </li>

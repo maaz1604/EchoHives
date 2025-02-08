@@ -1,11 +1,14 @@
+import ItemList from '@/components/shared/item-list/ItemList'
 import React from 'react'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 type Props = React.PropsWithChildren<{}>
 
-const Conversationslayout = ({children}: Props) => {
+const Conversationslayout = ({ children }: Props) => {
   return (
-    <div>{children}</div>
+    <>
+      <ItemList title='Conversations'>Conversations Page</ItemList>
+      {children}</>
   )
 }
 
