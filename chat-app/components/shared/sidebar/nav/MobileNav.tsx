@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { ThemeToggle } from "@/components/ui/theme/theme-toggle";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { useConversation } from "@/hoooks/useConversation";
 import { useNavigation } from "@/hoooks/useNavigation";
@@ -39,6 +40,9 @@ const MobileNav = () => {
                                 </li>
                             })
                         }
+                        <li>
+                            <ThemeToggle/>
+                        </li>
                         <li>
                             <UserButton />
                         </li>

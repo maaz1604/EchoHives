@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { ThemeToggle } from "@/components/ui/theme/theme-toggle";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { useNavigation } from "@/hoooks/useNavigation";
 import { UserButton } from "@clerk/clerk-react";
@@ -36,6 +37,7 @@ const DesktopNav = () => {
                     </ul>
                 </nav>
                 <div className="flex flex-col items-center gap-4">
+                    <ThemeToggle/>
                     <UserButton/>
                 </div>
             </Card>
