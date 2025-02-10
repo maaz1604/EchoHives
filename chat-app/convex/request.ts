@@ -51,3 +51,32 @@ export const create = mutation({
         return request;
     },
 });
+
+export const deny = mutation({
+    args: {
+        id: v.id("requests"),
+    },
+    handler: async (ctx, args) => {
+        const identity = await ctx.auth.getUserIdentity()
+        if (!identity) {
+            throw new ConvexError("Unauthorized");
+        };
+
+        const currentUser = await getUserbyClerkId({
+            ctx,
+            clerkId: identity.subject
+        });
+
+        if (!currentUser) {
+            throw new ConvexError("User not found");
+        };
+
+       const request = await ctx.db.get(args.id);
+
+       if (!request || request.reciever !== currentUser._id) {
+        throw new ConvexError("There was an error denying this request");
+       };
+
+       await ctx.db.delete(request._id);
+    },
+});

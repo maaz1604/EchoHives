@@ -20,7 +20,7 @@ export const useNavigation = () => {
         name: "Friends",
         href: "/friends",
         icon: <Users />,
-        active: pathname.startsWith("/friends"),
+        active: pathname==="/friends",
         count:requestCount,
     },
 ], [pathname,requestCount]);
