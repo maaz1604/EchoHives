@@ -119,31 +119,6 @@ In the `chat-application` directory, you can run:
 - Modern UI components and styling
 - Development environment setup
 
-### 🚧 In Progress
-- Chat functionality implementation
-- Real-time message updates
-- User interface improvements
-- Message history and persistence
-
-### 🔮 Planned Features
-- Group chat functionality
-- File and media sharing
-- Message reactions and threading
-- User presence indicators
-- Mobile app development
-
-## 🤝 Contributing
-
-We welcome contributions to EchoHives! Here's how you can help:
-
-1. **Fork the repository**
-2. **Create a feature branch**: `git checkout -b feature/amazing-feature`
-3. **Make your changes**: Follow our coding standards and best practices
-4. **Test your changes**: Ensure all tests pass and add new tests if needed
-5. **Commit your changes**: `git commit -m 'Add amazing feature'`
-6. **Push to the branch**: `git push origin feature/amazing-feature`
-7. **Open a Pull Request**: Describe your changes and their benefits
-
 ### Development Guidelines
 
 - Follow TypeScript best practices
@@ -151,18 +126,6 @@ We welcome contributions to EchoHives! Here's how you can help:
 - Ensure all components are responsive
 - Write meaningful commit messages
 - Add tests for new features
-
-## 📝 License
-
-This project is currently in development. License information will be added soon.
-
-## 🙋‍♂️ Support
-
-If you encounter any issues or have questions:
-
-1. Check the [detailed setup guide](./chat-application/README.md)
-2. Look through existing [GitHub issues](https://github.com/maaz1604/EchoHives/issues)
-3. Create a new issue with detailed information about your problem
 
 ## 🌟 Acknowledgments
 
