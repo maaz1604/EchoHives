@@ -134,7 +134,3 @@ In the `chat-application` directory, you can run:
 - [Convex](https://www.convex.dev/) for real-time backend services
 - [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
 - [Radix UI](https://www.radix-ui.com/) for accessible UI components
-
----
-
-**Built with ❤️ by the EchoHives team**
